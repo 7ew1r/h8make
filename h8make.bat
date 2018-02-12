@@ -65,7 +65,7 @@ for %%i in (*.sub) do ( call lk38h %%i )
 for %%i in (*.abs) do ( c38h %%i )
 
 rem --- Delete Intermediate Files ---
-if not "%1" == "-save-temps" (
+if not "%1" == "--save-temps" (
     for %%i in (*.abs) do ( del %%i )
     for %%i in (*.obj) do ( del %%i )
     for %%i in (*.lis) do ( del %%i )
